@@ -3,3 +3,5 @@ window.addEventListener('scroll', function(){
 	let windowPosition = window.scrollY > 0;
 	nav.classList.toggle('sticky', windowPosition);
 })
+
+

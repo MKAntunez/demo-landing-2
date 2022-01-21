@@ -5,3 +5,10 @@ window.addEventListener('scroll', function(){
 })
 
 
+function cambiarClase(){
+	document.getElementById("headingOne").classList.toggle("btn btn-link collapsed");
+}
+document.getElementById("boton").onclick = funtion();{
+	canbiarClase();
+}
+

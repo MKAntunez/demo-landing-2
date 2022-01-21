@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>demo-landing-2</title>
@@ -19,80 +20,60 @@
 </head>
 
 <body>
-    <header data-bs-spy="scroll">
-        <div id="header-stick" class="header-area transparent-header pt-40 pb-40">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-2 col-lg-2 d-flex align-items-center">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="assets/logo.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-10 col-lg-10">
-                        <div class="header-btn f-right pl-15 d-none d-lg-block">
-                            <a href="#" class="btn">Sign In</a>
-                        </div>
-                        <div class="main-menu main-menu-5 f-right">
-                            <div class="mean-push"></div>
-                            <nav id="mobile-menu" class="nav1">
-                                <ul>
-                                    <li class="active"> <a href="#home"> Home</a>
-                                    </li>
-                                    <li class=""> <a href="chose">Chose</a>
-                                    </li>
-                                    <li class=""> <a href="pricing">Pricing</a>
-                                    </li>
-                                    <li class=""> <a href="screeenshot">Screenshot</a>
-                                    </li>
-                                    <li class=""> <a href="faq">FAQ </a>
-                                    </li>
-                                    <li class=""> <a href="news"> News</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="mobile-menu mean-container">
-                            <div class="mean-bar">
-                                <a href="#nav" class="meanmenu-reveal "
-                                    style="right: 0px;left: auto;text-align: center;text-indent: 0px;font-size: 18px;">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </a>
-
-                                <nav class="mean-nav">
-                                    <ul style="display: none;">
-                                        <li class="active">
-                                            <a href="#home">Home</a>
-                                        </li>
-                                        <li class="">
-                                            <a href="#chose">Chose</a>
-                                        </li>
-                                        <li>
-                                            <a href="#pricing">Pricing</a>
-                                        </li>
-                                        <li>
-                                            <a href="#screenshot">Screenshot</a>
-                                        </li>
-                                        <li>
-                                            <a href="#faq">FAQ</a>
-                                        </li>
-                                        <li class="mean-last">
-                                            <a href="blog">News</a>
-                                        </li>
-                                    </ul>
-                                </nav>
+    <header>
+            <div id="header-sticky" class="header-area transparent-header pt-40 pb-40 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 d-flex align-items-center">
+                            <div class="logo">
+                                <a href="index.html"> <img src="assets/logo.png" alt=""> </a>
                             </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10">
+                                    <div class="header-btn f-right pl-15 d-none d-lg-block">
+                                        <a href="#" class="btn">Sign In</a>
+                                    </div>
+                                <div class="main-menu main-menu-5 f-right">
+                                    <div class="mean-push">
+                                        <nav id="mobile-menu" class="nav1">
+                                            <ul>
+                                                <li class="active"><a href="#home">Home</a></li>
+                                                <li class=""><a href="#chose">Chose</a></li>
+                                                <li class=""><a href="#pricing">Pricing</a></li>
+                                                <li class=""><a href="#screenshot">Screenshot</a></li>
+                                                <li class=""><a href="#faq">FAQ</a></li>
+                                                <li class=""><a href="#blog">News</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="mobile-menu mean-container">
+                                    <div class="mean-bar">
+                                        <nav class="mean-nav">
+                                            <a class="meanmenu-reveal nav-link dropdown-toggle" href="#"
+                                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                    <li><a href="#home">Home</a></li>
+                                                    <li><a href="#chose">Chose</a></li>
+                                                    <li><a href="#pricing">Pricing</a></li>
+                                                    <li><a href="#screenshot">Screenshot</a></li>
+                                                    <li><a href="#faq">FAQ</a></li>
+                                                    <li class="mean-last"><a href="#blog">News</a></li>
+                                                </ul>
+                                        </nav>
+                                    </nav>
+                                </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
-
-
     <main>
         <section id="home" class="slider-area slider-height slider-height-5 position-relative fix">
             <div class="container">
@@ -113,7 +94,14 @@
                                         </p>
                                     </a>
                                     <a href="">
-                                        <i class="fab fa-android"></i>
+                                        <i class="fab fa-android">
+                                            <div class="card-header">
+
+                                            </div>
+                                        </i>
+                                        <div class="collapse">
+
+                                        </div>
                                         <p>Download on the
                                             <br>
                                             <b>Google Store</b>
@@ -184,7 +172,7 @@
                             <div class="work-text">
                                 <h3>Retina Ready</h3>
                                 <p>
-                                  Enables you to define cross-channel profiles and improve audience. sessions per week                                
+                                    Enables you to define cross-channel profiles and improve audience. sessions per week
                                 </p>
                             </div>
                         </div>
@@ -205,7 +193,7 @@
                 </div>
             </div>
         </section>
-        <section id="chose" class="why-choose-area why-choose-area-3 bg-why" data-background="assets/bd-why.jpg" >
+        <section id="chose" class="why-choose-area why-choose-area-3 bg-why" data-background="assets/bd-why.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5 col-lg-4 col-md-12">
@@ -225,7 +213,7 @@
                             </div>
                             <div class="single-whychoose-dec mb-50">
                                 <div class="why-choose-icon">
-                                   <i class="fa fa-user"></i>
+                                    <i class="fa fa-user"></i>
                                 </div>
                                 <div class="why-choose-right">
                                     <h3 class="text-white">
@@ -242,7 +230,8 @@
                                 </div>
                                 <div class="why-choose-right">
                                     <h3 class="text-white">Clean Interface</h3>
-                                    <p class="text-white">Enables you to define cross-channel profiles and improveaudience. sessions per week </p>
+                                    <p class="text-white">Enables you to define cross-channel profiles and
+                                        improveaudience. sessions per week </p>
                                 </div>
                             </div>
                             <div class="single-whychoose-dec mb-50">
@@ -278,7 +267,8 @@
                             <h3>Build better managment
                                 easier togother</h3>
                             <p>Enables you to define cross-channel profiles and improve audience. sessions per week
-                                There is no one type or way in our diverse community Alienum phaedrum torquatos nec eu.</p>
+                                There is no one type or way in our diverse community Alienum phaedrum torquatos nec eu.
+                            </p>
                             <a href="" class="btn">Try it Free Now</a>
                         </div>
                     </div>
@@ -305,18 +295,19 @@
                     <div class="price-menu-box text-center">
                         <ul class="nav price-nav mb-40" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a href="#home1" class="nav-link active" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" aria-selected="tru">Monthly</a>
+                                <a href="#home1" class="nav-link active" id="home-tab" data-toggle="tab" role="tab"
+                                    aria-controls="home" aria-selected="tru">Monthly</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                                aria-selected="false">Yearly</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">Yearly</a>
                             </li>
                         </ul>
                     </div>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home1" role="talpanel" aria-labelledby="home-tab">
                             <div class="row">
-                                <div class="col-xl-4 col-lg-4"> 
+                                <div class="col-xl-4 col-lg-4">
                                     <div class="price-box text-center mb-30">
                                         <div class="price-header">
                                             <h4>Primary</h4>
@@ -337,11 +328,11 @@
 
                                         </div>
                                         <div class="price-link mt-35">
-                                            <a href="#" class="btn btn-theme-border" >Purchase Now</a>
+                                            <a href="#" class="btn btn-theme-border">Purchase Now</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4"> 
+                                <div class="col-xl-4 col-lg-4">
                                     <div class="price-box text-center mb-30">
                                         <div class="price-header">
                                             <h4>standard</h4>
@@ -362,11 +353,11 @@
 
                                         </div>
                                         <div class="price-link active mt-35">
-                                            <a href="#" class="btn btn-theme-border" >Purchase Now</a>
+                                            <a href="#" class="btn btn-theme-border">Purchase Now</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4"> 
+                                <div class="col-xl-4 col-lg-4">
                                     <div class="price-box text-center mb-30">
                                         <div class="price-header">
                                             <h4>popular</h4>
@@ -387,7 +378,7 @@
 
                                         </div>
                                         <div class="price-link mt-35">
-                                            <a href="#" class="btn btn-theme-border" >Purchase Now</a>
+                                            <a href="#" class="btn btn-theme-border">Purchase Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -396,7 +387,7 @@
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="row">
-                                <div class="col-xl-4 col-lg-4"> 
+                                <div class="col-xl-4 col-lg-4">
                                     <div class="price-box text-center mb-30">
                                         <div class="price-header">
                                             <h4>Primary</h4>
@@ -417,11 +408,11 @@
 
                                         </div>
                                         <div class="price-link mt-35">
-                                            <a href="#" class="btn btn-theme-border" >Purchase Now</a>
+                                            <a href="#" class="btn btn-theme-border">Purchase Now</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4"> 
+                                <div class="col-xl-4 col-lg-4">
                                     <div class="price-box text-center mb-30">
                                         <div class="price-header">
                                             <h4>standard</h4>
@@ -439,14 +430,14 @@
                                                 <li>Unlimited viewers</li>
                                                 <li>Team account</li>
                                             </ul>
-                                            
+
                                         </div>
                                         <div class="price-link mt-35">
-                                            <a href="#" class="btn btn-theme-border" >Purchase Now</a>
+                                            <a href="#" class="btn btn-theme-border">Purchase Now</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4"> 
+                                <div class="col-xl-4 col-lg-4">
                                     <div class="price-box text-center mb-30">
                                         <div class="price-header">
                                             <h4>popular</h4>
@@ -467,7 +458,7 @@
 
                                         </div>
                                         <div class="price-link mt-35">
-                                            <a href="#" class="btn btn-theme-border" >Purchase Now</a>
+                                            <a href="#" class="btn btn-theme-border">Purchase Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -478,9 +469,395 @@
                 </div>
             </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section class="testimonial-area pb-130 bg-testimoial1 test-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
+                        <div class="testimonial-all text-center pb-90">
+                            <div class="testimonial-heading mb-40">
+                                <h2>Testimonial</h2>
+                            </div>
+                            <div class="testimonial-active text-center mb-40 slick-initialized slick-slider">
+                                <div class="slick-list draggable">
+                                    <div class="slick-track" style="opacity: 1;width: 2068px;">
+                                        <div class="test-item slick-slide slick-current slick-active"
+                                            datas-slick-index="0" aria-hidden="false" tabindex="0"
+                                            style="width: 510px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+                                            <p>Define cross-channel profiles and improve audience
+                                                segmentation based on rules and triggers to enable perfectly timed Appri
+                                                enables you to.
+                                            </p>
+                                            <span>
+                                                <b>Martin Hedges</b>
+                                                - CEO. Marker
+                                            </span>
+                                        </div>
+                                        <div class="test-item slick-slide" data-slick-index="1" aria-hidden="true"
+                                            tabindex="-1"
+                                            style="width: 510px; position: relative; left: -510px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
+
+                                            <p>Appri enables you to define cross-channel profiles and improve audience
+                                                segmentation based on rules and triggers to enable perfectly timed.</p>
+
+                                            <span> <b>Azad vai</b> - CEO. Marker</span>
+
+                                        </div>
+                                        <div class="test-item slick-slide" data-slick-index="2" aria-hidden="true"
+                                            tabindex="-1"
+                                            style="width: 510px; position: relative; left: -1020px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
+
+                                            <p>Profiles appri enables you to define cross-channel and improve audience
+                                                segmentation based on rules and triggers to enable perfectly timed.</p>
+
+                                            <span> <b>Salim Rana</b> - CEO. Marker</span>
+
+                                        </div>
+                                        <div class="test-item slick-slide" data-slick-index="3" aria-hidden="true"
+                                            tabindex="-1"
+                                            style="width: 510px; position: relative; left: -1530px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
+
+                                            <p>Appri enables you to define cross-channel profiles and improve audience
+                                                segmentation based on rules and triggers to enable perfectly timed.</p>
+
+                                            <span> <b>Salim Rana</b> - CEO. Marker</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-img-active text-center slick-initialized slick-slider">
+                                <div class="slick-list draggable" style="padding: 0px;">
+                                    <div class="slick-track"
+                                        style="opacity: 1; width: 1680px; transform: translate3d(-560px, 0px, 0px);">
+                                        <div class="test-img-item slick-slide slick-cloned" style="width: 140px;"
+                                            tabindex="-1" data-slick-index="-4" aria-hidden="true">
+
+                                            <img src="assets/testimonial-1.png" alt="">
+
+                                        </div>
+                                        <div class="test-img-item slick-slide slick-cloned" style="width: 140px;"
+                                            tabindex="-1" data-slick-index="-3" aria-hidden="true">
+
+                                            <img src="assets/testimonial-2.png" alt="">
+
+                                        </div>
+                                        <div class="test-img-item slick-slide slick-cloned" style="width: 140px;"
+                                            tabindex="-1" data-slick-index="-2" aria-hidden="false">
+
+                                            <img src="assets/testimonial-3.png" alt="">
+
+                                        </div>
+                                        <div class="test-img-item slick-slide slick-cloned slick-active"
+                                            style="width: 140px;" tabindex="-1" data-slick-index="-1"
+                                            aria-hidden="true">
+
+                                            <img src="assets/testimonial-p.png" alt="">
+
+                                        </div>
+                                        <div class="test-img-item slick-slide slick-current slick-active slick-center"
+                                            style="width: 140px;" tabindex="0" data-slick-index="0" aria-hidden="true">
+
+                                            <img src="assets/testimonial-1.png" alt="">
+
+                                        </div>
+                                        <div class="test-img-item slick-slide slick-active" style="width: 140px;"
+                                            tabindex="0" data-slick-index="1" aria-hidden="true">
+
+                                            <img src="assets/testimonial-2.png" alt="">
+
+                                        </div>
+                                        <div class="test-img-item slick-slide " style="width: 140px;" tabindex="0"
+                                            data-slick-index="2" aria-hidden="true">
+
+                                            <img src="assets/testimonial-3.png" alt="">
+
+                                        </div>
+                                        <div class="test-img-item slick-slide " style="width: 140px;" tabindex="-1"
+                                            data-slick-index="3" aria-hidden="true">
+
+                                            <img src="assets/testimonial-p.png" alt="">
+
+                                        </div>
+                                        <div class="test-img-item slick-slide slick-cloned slick-center"
+                                            style="width: 140px;" tabindex="-1" data-slick-index="4" aria-hidden="true">
+
+                                            <img src="assets/testimonial-1.png" alt="">
+
+                                        </div>
+                                        <div class="test-img-item slick-slide slick-cloned" style="width: 140px;"
+                                            tabindex="-1" data-slick-index="5" aria-hidden="true">
+
+                                            <img src="assets/testimonial-2.png" alt="">
+
+                                        </div>
+                                        <div class="test-img-item slick-slide slick-cloned" style="width: 140px;"
+                                            tabindex="-1" data-slick-index="6" aria-hidden="true">
+
+                                            <img src="assets/testimonial-3.png" alt="">
+
+                                        </div>
+                                        <div class="test-img-item slick-slide slick-cloned" style="width: 140px;"
+                                            tabindex="-1" data-slick-index="7" aria-hidden="true">
+
+                                            <img src="assets/testimonial-p.png" alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                      <img src="assets/testimonial-1.png" alt="">
+                  </button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+                        <img src="assets/testimonial-2.png" alt="">
+                  </button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+                        <img src="assets/testimonial-3.png" alt="">
+                  </button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">
+                        <img src="assets/testimonial-p.png" alt="">
+                  </button>
+                  
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <p>Define cross-channel profiles and improve audience
+                        segmentation based on rules and triggers to enable perfectly timed Appri
+                        enables you to.</p>
+                    <div class="carousel-caption d-none d-md-block">
+                      
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <p>Appri enables you to define cross-channel profiles and improve audience
+                        segmentation based on rules and triggers to enable perfectly timed.</p>
+                    <div class="carousel-caption d-none d-md-block">
+                      
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <p>Profiles appri enables you to define cross-channel and improve audience
+                        segmentation based on rules and triggers to enable perfectly timed.</p>
+                    <div class="carousel-caption d-none d-md-block">
+                      
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <p>Appri enables you to define cross-channel profiles and improve audience
+                        segmentation based on rules and triggers to enable perfectly timed.</p>
+                    <div class="carousel-caption d-none d-md-block">
+                      
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div> -->
+        </section>
+        <section id="Screenshot" class="apps-screenshot-area pt-160">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
+                        <div class="section-title text-center mb-40">
+                            <h2>App Screenshot</h2>
+                            <p>
+                                Enables you to define cross-channel profiles and improve audience. sessions per week
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="screenshot-img">
+                        <img src="assets/sceenshot-img-section.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="faq-area pt-100 pb-100" data-background="asstes/shape-bg.png">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
+                        <div class="section-title text-center mb-70">
+                            <h2>FAQS</h2>
+                            <p>Enables you to define cross-channel profiles and improve
+                                audience. sessions per weeka</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="fag-thumb">
+                            <img src="assets/faq.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="faq-wrapper faq-wra-3">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <a class="btn btn-link" href="#" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                How to Buy This?
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p>
+                                                Enables you to define cross-channel profiles and improve audience.
+                                                sessions per week There is no one type or way in our
+                                                diverse community Alienum phaedrum torquatos nec eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <a id="boton" href="#" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                It is refundable?
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p>
+                                                Enables you to define cross-channel profiles and improve audience.
+                                                sessions per week There is no one type or way in our
+                                                diverse community Alienum phaedrum torquatos nec eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <a href="#" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapsehree">
+                                                Can i use free
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p>
+                                                Enables you to define cross-channel profiles and improve audience.
+                                                sessions per week There is no one type or way in our
+                                                diverse community Alienum phaedrum torquatos nec eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
+                        <div class="faq-bottom-area pt-65 mb-55 text-center">
+                            <h2>Trusted by thousands of people and companies Worldwide</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row brand-active slick-initialized slick-slider">
+                    <div class="slick-list draggable">
+                        <div class="slick-track"
+                            style="opacity: 1; width: 3240px; transform: translate3d(-540px, 0px, 0px);">
+                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
+                                data-slick-index="-2" aria-hidden="true">
+                                <div class="single-brand">
+                                    <img src=" assets/bramd30.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
+                                data-slick-index="-1" aria-hidden="true">
+                                <div class="single-brand">
+                                    <img src="assets/brand10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 slick-slide" style="width: 270px;" tabindex="-1" data-slick-index="0"
+                                aria-hidden="true">
+                                <div class="single-brand">
+                                    <img src="assets/brand4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 slick-slide" style="width: 270px;" tabindex="-1" data-slick-index="1"
+                                aria-hidden="true">
+                                <div class="single-brand">
+                                    <img src="assets/brand10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 slick-slide" style="width: 270px;" tabindex="-1" data-slick-index="2"
+                                aria-hidden="true">
+                                <div class="single-brand">
+                                    <img src="assets/bramd20.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 slick-slide slick-active" style="width: 270px;" tabindex="-1"
+                                data-slick-index="3" aria-hidden="false">
+                                <div class="single-brand">
+                                    <img src="assets/bramd30.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 slick-slide slick-current slick-active" style="width: 270px;"
+                                tabindex="0" data-slick-index="4" aria-hidden="false">
+                                <div class="single-brand">
+                                    <img src="assets/brand10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
+                                data-slick-index="5" aria-hidden="true">
+                                <div class="single-brand">
+                                    <img src="assets/brand4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
+                                data-slick-index="6" aria-hidden="true">
+                                <div class="single-brand">
+                                    <img src="assets/brand10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
+                                data-slick-index="7" aria-hidden="true">
+                                <div class="single-brand">
+                                    <img src="assets/bramd20.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
+                                data-slick-index="8" aria-hidden="true">
+                                <div class="single-brand">
+                                    <img src="assets/bramd30.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
+                                data-slick-index="9" aria-hidden="true">
+                                <div class="single-brand">
+                                    <img src="assets/brand10.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="blog" class="latest-news-area pt-100">
             <div class="container">
                 <div class="row">
@@ -637,19 +1014,13 @@
         </section>
 
     </main>
-
     <script src="js/scrool.js"></script>
     <script src="js/menuhamburguesa.js"></script>
     <script src="js/jquery.meanmenu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
 
 </body>
 

@@ -1,0 +1,66 @@
+.gtco-testimonials {
+  position: relative;
+  margin-top: 30px;
+}
+
+
+.gtco-testimonials .owl-nav {
+  display: none;
+}
+
+
+.gtco-testimonials .owl-dots .active {
+  box-shadow: none;
+}
+
+.gtco-testimonials .card {
+  
+  margin: 0 20px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
+  background: none;
+}
+.gtco-testimonials .card .card-img-top {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  width: 80px;
+  height: 80px;
+}
+
+
+.gtco-testimonials .active {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.gtco-testimonials .center {
+  opacity: 1;
+}
+
+
+.gtco-testimonials .center .card-img-top {
+  max-width: 100%;
+  height: 105px;
+  width: 105px;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+  background: none;
+  border: none;
+  opacity: 1;
+}
+@media (min-width: 767px) {
+  .gtco-testimonials {
+    margin-top: 20px;
+  }
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  outline: 0;
+}
+.owl-carousel button.owl-dot {
+  outline: 0;
+}
+
+
+}

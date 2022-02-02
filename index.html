@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="css/testimonial.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>demo-landing-2</title>
@@ -21,54 +25,54 @@
 
 <body>
     <header>
-            <div id="header-sticky" class="header-area transparent-header pt-40 pb-40 ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-2 col-lg-2 d-flex align-items-center">
-                            <div class="logo">
-                                <a href="index.html"> <img src="assets/logo.png" alt=""> </a>
+        <div id="header-sticky" class="header-area transparent-header pt-40 pb-40 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 d-flex align-items-center">
+                        <div class="logo">
+                            <a href="index.html"> <img src="assets/logo.png" alt=""> </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-10">
+                        <div class="header-btn f-right pl-15 d-none d-lg-block">
+                            <a href="#" class="btn">Sign In</a>
+                        </div>
+                        <div class="main-menu main-menu-5 f-right">
+                            <div class="mean-push">
+                                <nav id="mobile-menu" class="nav1">
+                                    <ul>
+                                        <li class="active"><a href="#home">Home</a></li>
+                                        <li class=""><a href="#chose">Chose</a></li>
+                                        <li class=""><a href="#pricing">Pricing</a></li>
+                                        <li class=""><a href="#screenshot">Screenshot</a></li>
+                                        <li class=""><a href="#faq">FAQ</a></li>
+                                        <li class=""><a href="#blog">News</a></li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
-                        <div class="col-xl-10 col-lg-10">
-                                    <div class="header-btn f-right pl-15 d-none d-lg-block">
-                                        <a href="#" class="btn">Sign In</a>
-                                    </div>
-                                <div class="main-menu main-menu-5 f-right">
-                                    <div class="mean-push">
-                                        <nav id="mobile-menu" class="nav1">
-                                            <ul>
-                                                <li class="active"><a href="#home">Home</a></li>
-                                                <li class=""><a href="#chose">Chose</a></li>
-                                                <li class=""><a href="#pricing">Pricing</a></li>
-                                                <li class=""><a href="#screenshot">Screenshot</a></li>
-                                                <li class=""><a href="#faq">FAQ</a></li>
-                                                <li class=""><a href="#blog">News</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                                <div class="mobile-menu mean-container">
-                                    <div class="mean-bar">
-                                        <nav class="mean-nav">
-                                            <a class="meanmenu-reveal nav-link dropdown-toggle" href="#"
-                                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </a>
-                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                                    <li><a href="#home">Home</a></li>
-                                                    <li><a href="#chose">Chose</a></li>
-                                                    <li><a href="#pricing">Pricing</a></li>
-                                                    <li><a href="#screenshot">Screenshot</a></li>
-                                                    <li><a href="#faq">FAQ</a></li>
-                                                    <li class="mean-last"><a href="#blog">News</a></li>
-                                                </ul>
-                                        </nav>
-                                    </nav>
-                                </div>
-                            
+                        <div class="mobile-menu mean-container">
+                            <div class="mean-bar">
+                                <nav class="mean-nav">
+                                    <a class="meanmenu-reveal nav-link dropdown-toggle" href="#"
+                                        id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#chose">Chose</a></li>
+                                        <li><a href="#pricing">Pricing</a></li>
+                                        <li><a href="#screenshot">Screenshot</a></li>
+                                        <li><a href="#faq">FAQ</a></li>
+                                        <li class="mean-last"><a href="#blog">News</a></li>
+                                    </ul>
+                                </nav>
+                                </nav>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -295,11 +299,11 @@
                     <div class="price-menu-box text-center">
                         <ul class="nav price-nav mb-40" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a href="#home1" class="nav-link active" id="home-tab" data-toggle="tab" role="tab"
-                                    aria-controls="home" aria-selected="tru">Monthly</a>
+                                <a href="#home1" class="nav-link active" id="home-tab" data-bs-toggle="tab" role="tab"
+                                    aria-controls="home" aria-selected="true">Monthly</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
                                     aria-controls="profile" aria-selected="false">Yearly</a>
                             </li>
                         </ul>
@@ -469,7 +473,8 @@
                 </div>
             </div>
         </section>
-        <section class="testimonial-area pb-130 bg-testimoial1 test-space">
+        <section class="testimonial-area pb-130 bg-testimonial1 test-space">
+
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
@@ -477,192 +482,99 @@
                             <div class="testimonial-heading mb-40">
                                 <h2>Testimonial</h2>
                             </div>
-                            <div class="testimonial-active text-center mb-40 slick-initialized slick-slider">
-                                <div class="slick-list draggable">
-                                    <div class="slick-track" style="opacity: 1;width: 2068px;">
-                                        <div class="test-item slick-slide slick-current slick-active"
-                                            datas-slick-index="0" aria-hidden="false" tabindex="0"
-                                            style="width: 510px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
-                                            <p>Define cross-channel profiles and improve audience
-                                                segmentation based on rules and triggers to enable perfectly timed Appri
-                                                enables you to.
-                                            </p>
-                                            <span>
-                                                <b>Martin Hedges</b>
-                                                - CEO. Marker
-                                            </span>
-                                        </div>
-                                        <div class="test-item slick-slide" data-slick-index="1" aria-hidden="true"
-                                            tabindex="-1"
-                                            style="width: 510px; position: relative; left: -510px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
-
-                                            <p>Appri enables you to define cross-channel profiles and improve audience
-                                                segmentation based on rules and triggers to enable perfectly timed.</p>
-
-                                            <span> <b>Azad vai</b> - CEO. Marker</span>
-
-                                        </div>
-                                        <div class="test-item slick-slide" data-slick-index="2" aria-hidden="true"
-                                            tabindex="-1"
-                                            style="width: 510px; position: relative; left: -1020px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
-
-                                            <p>Profiles appri enables you to define cross-channel and improve audience
-                                                segmentation based on rules and triggers to enable perfectly timed.</p>
-
-                                            <span> <b>Salim Rana</b> - CEO. Marker</span>
-
-                                        </div>
-                                        <div class="test-item slick-slide" data-slick-index="3" aria-hidden="true"
-                                            tabindex="-1"
-                                            style="width: 510px; position: relative; left: -1530px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
-
-                                            <p>Appri enables you to define cross-channel profiles and improve audience
-                                                segmentation based on rules and triggers to enable perfectly timed.</p>
-
-                                            <span> <b>Salim Rana</b> - CEO. Marker</span>
-
-                                        </div>
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" id="slider1">
+                                        <p class="testimonial__text">Define cross-channel profiles and improve audience
+                                            segmentation based on rules and triggers to enable perfectly timed Appri
+                                            enables you to.</p>
+                                        <span> <b>Martin Hedges</b> - CEO. Marker</span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="testimonial-img-active text-center slick-initialized slick-slider">
-                                <div class="slick-list draggable" style="padding: 0px;">
-                                    <div class="slick-track"
-                                        style="opacity: 1; width: 1680px; transform: translate3d(-560px, 0px, 0px);">
-                                        <div class="test-img-item slick-slide slick-cloned" style="width: 140px;"
-                                            tabindex="-1" data-slick-index="-4" aria-hidden="true">
-
-                                            <img src="assets/testimonial-1.png" alt="">
-
-                                        </div>
-                                        <div class="test-img-item slick-slide slick-cloned" style="width: 140px;"
-                                            tabindex="-1" data-slick-index="-3" aria-hidden="true">
-
-                                            <img src="assets/testimonial-2.png" alt="">
-
-                                        </div>
-                                        <div class="test-img-item slick-slide slick-cloned" style="width: 140px;"
-                                            tabindex="-1" data-slick-index="-2" aria-hidden="false">
-
-                                            <img src="assets/testimonial-3.png" alt="">
-
-                                        </div>
-                                        <div class="test-img-item slick-slide slick-cloned slick-active"
-                                            style="width: 140px;" tabindex="-1" data-slick-index="-1"
-                                            aria-hidden="true">
-
-                                            <img src="assets/testimonial-p.png" alt="">
-
-                                        </div>
-                                        <div class="test-img-item slick-slide slick-current slick-active slick-center"
-                                            style="width: 140px;" tabindex="0" data-slick-index="0" aria-hidden="true">
-
-                                            <img src="assets/testimonial-1.png" alt="">
-
-                                        </div>
-                                        <div class="test-img-item slick-slide slick-active" style="width: 140px;"
-                                            tabindex="0" data-slick-index="1" aria-hidden="true">
-
-                                            <img src="assets/testimonial-2.png" alt="">
-
-                                        </div>
-                                        <div class="test-img-item slick-slide " style="width: 140px;" tabindex="0"
-                                            data-slick-index="2" aria-hidden="true">
-
-                                            <img src="assets/testimonial-3.png" alt="">
-
-                                        </div>
-                                        <div class="test-img-item slick-slide " style="width: 140px;" tabindex="-1"
-                                            data-slick-index="3" aria-hidden="true">
-
-                                            <img src="assets/testimonial-p.png" alt="">
-
-                                        </div>
-                                        <div class="test-img-item slick-slide slick-cloned slick-center"
-                                            style="width: 140px;" tabindex="-1" data-slick-index="4" aria-hidden="true">
-
-                                            <img src="assets/testimonial-1.png" alt="">
-
-                                        </div>
-                                        <div class="test-img-item slick-slide slick-cloned" style="width: 140px;"
-                                            tabindex="-1" data-slick-index="5" aria-hidden="true">
-
-                                            <img src="assets/testimonial-2.png" alt="">
-
-                                        </div>
-                                        <div class="test-img-item slick-slide slick-cloned" style="width: 140px;"
-                                            tabindex="-1" data-slick-index="6" aria-hidden="true">
-
-                                            <img src="assets/testimonial-3.png" alt="">
-
-                                        </div>
-                                        <div class="test-img-item slick-slide slick-cloned" style="width: 140px;"
-                                            tabindex="-1" data-slick-index="7" aria-hidden="true">
-
-                                            <img src="assets/testimonial-p.png" alt="">
-
-                                        </div>
+                                    <div class="carousel-item" id="slider2">
+                                        <p class="testimonial__text">Appri enables you to define cross-channel profiles
+                                            and improve audience
+                                            segmentation based on rules and triggers to enable perfectly timed.</p>
+                                        <span> <b>Azad vai</b> - CEO. Marker</span>
                                     </div>
-                                </div>
+                                    <div class="carousel-item" id="slider3">
+                                        <p class="testimonial__text">Profiles appri enables you to define cross-channel
+                                            and improve audience
+                                            segmentation based on rules and triggers to enable perfectly timed.</p>
+                                        <span> <b>Salim Rana</b> - CEO. Marker</span>
+                                    </div>
+                                    <div class="carousel-item" id="slider4">
+                                        <p class="testimonial__text">Appri enables you to define cross-channel profiles
+                                            and improve audience
+                                            segmentation based on rules and triggers to enable perfectly timed.</p>
+                                        <span> <b>Salim Rana</b> - CEO. Marker</span>
+                                    </div>
+                                </div>    
                             </div>
+
+                            <div class="gtco-testimonials">  
+                                <div class="owl-carousel owl-carousel1 owl-theme">
+                                  <div>
+                                    <div class="card text-center">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                            <img class="card-img-top" src="assets/testimonial-1.png" alt="">
+                                        </button>                                      
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="card text-center">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                                      <img class="card-img-top" src="assets/testimonial-2.png" alt="">  
+                                        </button>                                  
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="card text-center">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+                                      <img class="card-img-top" src="assets/testimonial-3.png" alt="">  
+                                    </button>                                
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="card text-center">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
+                                      <img class="card-img-top" src="assets/testimonial-p.png" alt="">           
+                                         </button>                       
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="card text-center">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                            <img class="card-img-top" src="assets/testimonial-1.png" alt="">
+                                        </button>                                      
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="card text-center">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                                      <img class="card-img-top" src="assets/testimonial-2.png" alt="">  
+                                        </button>                                  
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="card text-center">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+                                      <img class="card-img-top" src="assets/testimonial-3.png" alt="">  
+                                    </button>                                
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="card text-center">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
+                                      <img class="card-img-top" src="assets/testimonial-p.png" alt="">           
+                                         </button>                       
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>                        
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                      <img src="assets/testimonial-1.png" alt="">
-                  </button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
-                        <img src="assets/testimonial-2.png" alt="">
-                  </button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
-                        <img src="assets/testimonial-3.png" alt="">
-                  </button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">
-                        <img src="assets/testimonial-p.png" alt="">
-                  </button>
-                  
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <p>Define cross-channel profiles and improve audience
-                        segmentation based on rules and triggers to enable perfectly timed Appri
-                        enables you to.</p>
-                    <div class="carousel-caption d-none d-md-block">
-                      
-                      <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <p>Appri enables you to define cross-channel profiles and improve audience
-                        segmentation based on rules and triggers to enable perfectly timed.</p>
-                    <div class="carousel-caption d-none d-md-block">
-                      
-                      <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <p>Profiles appri enables you to define cross-channel and improve audience
-                        segmentation based on rules and triggers to enable perfectly timed.</p>
-                    <div class="carousel-caption d-none d-md-block">
-                      
-                      <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <p>Appri enables you to define cross-channel profiles and improve audience
-                        segmentation based on rules and triggers to enable perfectly timed.</p>
-                    <div class="carousel-caption d-none d-md-block">
-                      
-                      <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                  </div>
-                </div>
-                
-              </div> -->
         </section>
         <section id="Screenshot" class="apps-screenshot-area pt-160">
             <div class="container">
@@ -696,7 +608,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-5 col-lg-5">
-                        <div class="fag-thumb">
+                        <div class="faq-thumb">
                             <img src="assets/faq.png" alt="">
                         </div>
                     </div>
@@ -706,15 +618,15 @@
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
                                         <h2 class="mb-0">
-                                            <a class="btn btn-link" href="#" data-toggle="collapse"
-                                                data-target="#collapseOne" aria-expanded="true"
+                                            <a class="btn btn-link" type="button" href="#" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
                                                 aria-controls="collapseOne">
                                                 How to Buy This?
                                             </a>
                                         </h2>
                                     </div>
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                        data-parent="#accordionExample">
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="card-body">
                                             <p>
                                                 Enables you to define cross-channel profiles and improve audience.
@@ -727,15 +639,15 @@
                                 <div class="card">
                                     <div class="card-header" id="headingTwo">
                                         <h2 class="mb-0">
-                                            <a id="boton" href="#" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo">
+                                            <a href="#" class="btn btn-link collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
                                                 It is refundable?
                                             </a>
                                         </h2>
                                     </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                        data-parent="#accordionExample">
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="card-body">
                                             <p>
                                                 Enables you to define cross-channel profiles and improve audience.
@@ -748,15 +660,15 @@
                                 <div class="card">
                                     <div class="card-header" id="headingThree">
                                         <h2 class="mb-0">
-                                            <a href="#" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapseThree" aria-expanded="false"
+                                            <a href="#" class="btn btn-link collapsed" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree" aria-expanded="false"
                                                 aria-controls="collapsehree">
                                                 Can i use free
                                             </a>
                                         </h2>
                                     </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                        data-parent="#accordionExample">
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="card-body">
                                             <p>
                                                 Enables you to define cross-channel profiles and improve audience.
@@ -777,85 +689,52 @@
                         </div>
                     </div>
                 </div>
-                <div class="row brand-active slick-initialized slick-slider">
-                    <div class="slick-list draggable">
-                        <div class="slick-track"
-                            style="opacity: 1; width: 3240px; transform: translate3d(-540px, 0px, 0px);">
-                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
-                                data-slick-index="-2" aria-hidden="true">
-                                <div class="single-brand">
-                                    <img src=" assets/bramd30.png" alt="">
+                <div class="row ">
+                    <div class="carousel">
+                        <div class="carousel__contenedor">
+                            <div class="carousel__lista">
+                                <div class="carousel__elemento">
+                                    <img src="assets/bramd30.png" alt="Rock and Roll Hall of Fame">
+
+                                </div>
+                                <div class="carousel__elemento">
+                                    <img src="assets/brand10.png" alt="Constitution Square - Tower I">
+
+                                </div>
+                                <div class="carousel__elemento">
+                                    <img src="assets/brand4.png" alt="Empire State Building">
+
+                                </div>
+                                <div class="carousel__elemento">
+                                    <img src="assets/bramd30.png" alt="Harmony Tower">
+
+                                </div>
+
+                                <div class="carousel__elemento">
+                                    <img src="assets/brand10.png" alt="Empire State Building">
+
+                                </div>
+                                <div class="carousel__elemento">
+                                    <img src="assets/bramd30.png" alt="Harmony Tower">
+
+                                </div>
+                                <div class="carousel__elemento">
+                                    <img src="assets/brand4.png" alt="Empire State Building">
+
+                                </div>
+                                <div class="carousel__elemento">
+                                    <img src="assets/bramd20.png" alt="Harmony Tower">
+
                                 </div>
                             </div>
-                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
-                                data-slick-index="-1" aria-hidden="true">
-                                <div class="single-brand">
-                                    <img src="assets/brand10.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 slick-slide" style="width: 270px;" tabindex="-1" data-slick-index="0"
-                                aria-hidden="true">
-                                <div class="single-brand">
-                                    <img src="assets/brand4.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 slick-slide" style="width: 270px;" tabindex="-1" data-slick-index="1"
-                                aria-hidden="true">
-                                <div class="single-brand">
-                                    <img src="assets/brand10.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 slick-slide" style="width: 270px;" tabindex="-1" data-slick-index="2"
-                                aria-hidden="true">
-                                <div class="single-brand">
-                                    <img src="assets/bramd20.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 slick-slide slick-active" style="width: 270px;" tabindex="-1"
-                                data-slick-index="3" aria-hidden="false">
-                                <div class="single-brand">
-                                    <img src="assets/bramd30.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 slick-slide slick-current slick-active" style="width: 270px;"
-                                tabindex="0" data-slick-index="4" aria-hidden="false">
-                                <div class="single-brand">
-                                    <img src="assets/brand10.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
-                                data-slick-index="5" aria-hidden="true">
-                                <div class="single-brand">
-                                    <img src="assets/brand4.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
-                                data-slick-index="6" aria-hidden="true">
-                                <div class="single-brand">
-                                    <img src="assets/brand10.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
-                                data-slick-index="7" aria-hidden="true">
-                                <div class="single-brand">
-                                    <img src="assets/bramd20.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
-                                data-slick-index="8" aria-hidden="true">
-                                <div class="single-brand">
-                                    <img src="assets/bramd30.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 slick-slide slick-cloned" style="width: 270px;" tabindex="-1"
-                                data-slick-index="9" aria-hidden="true">
-                                <div class="single-brand">
-                                    <img src="assets/brand10.png" alt="">
-                                </div>
-                            </div>
+
+
                         </div>
+
+                        <div role="tablist" class="carousel__indicadores"></div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         <section id="blog" class="latest-news-area pt-100">
@@ -1014,9 +893,13 @@
         </section>
 
     </main>
-    <script src="js/scrool.js"></script>
+    <script src="js/scrool.js"></script>    
     <script src="js/menuhamburguesa.js"></script>
     <script src="js/jquery.meanmenu.js"></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script><script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
